@@ -7,33 +7,37 @@
       <link rel="stylesheet" type="text/css" href="css/styles-about.css">
     <title>David William Zuck Oil Paintings</title>
 <style>
-
-	.container {
-  display: flex;
-  max-width: 1000px;
+.container {
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden; /* Clearfix for containing floated elements */
 }
 
 .text-column {
-  flex: 0 0 65%; /* Text column takes up 65% of the container */
+  float: left;
+  width: 65%;
+  margin-right: 5%; /* Add some space between text and image */
 }
 
 .image-column {
-  flex: 0 0 35%; /* Image column takes up 35% of the container */
-  margin-left: 20px; /* Add some space between text and image */
-}
-
-.text-column p {
-  margin-right: 20px; /* Add margin to the right side of the text */
+  float: left;
+  width: 30%;
 }
 
 .image-column img {
   max-width: 100%;
   height: auto;
+  display: block; /* Ensure image does not affect line height */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.text-column p {
+  margin-bottom: 20px; /* Add margin to the bottom of paragraphs */
+  line-height: 1.6;
+}
+
 
 
 
