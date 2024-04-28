@@ -11,17 +11,16 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  overflow: hidden; /* Clearfix for containing floated elements */
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-column {
-  float: left;
-  width: 60%;
+  flex: 0 0 60%;
 }
 
 .image-column {
-  float: right;
-  width: 35%;
+  flex: 0 0 35%;
 }
 
 .image-column img {
@@ -35,7 +34,6 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
-
 
 </style>
 </head>
