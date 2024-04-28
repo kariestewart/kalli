@@ -1,7 +1,15 @@
-.box img{
-    border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.box {
+  display: inline-block; /* Ensure the box only takes up as much space as necessary */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
 
+.box img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: inherit; /* Inherit border radius from parent */
+  box-shadow: inherit; /* Inherit box shadow from parent */
+}
 
 
 
