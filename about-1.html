@@ -11,16 +11,17 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text-column {
-  width: 65%; /* Text column takes up 65% of the container */
-  float: left;
+  flex: 0 0 60%; /* Text column takes up 60% of the container */
+  margin-right: 5%; /* Add some space between text and image */
 }
 
 .image-column {
-  width: 30%; /* Image column takes up 30% of the container */
-  float: right;
+  flex: 0 0 35%; /* Image column takes up 35% of the container */
 }
 
 .image-column img {
