@@ -11,22 +11,22 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  overflow: hidden; /* Clearfix for containing floated elements */
 }
 
 .text-column {
-  flex: 0 0 60%; /* Text column takes up 60% of the container */
+  float: left;
+  width: 60%;
 }
 
 .image-column {
-  flex: 0 0 35%; /* Image column takes up 35% of the container */
+  float: right;
+  width: 35%;
 }
 
 .image-column img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,6 +35,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 
 </style>
 </head>
@@ -57,11 +58,9 @@
     
 <body>
 	
-
 <div class="container">
     <div class="text-column">
-     
-        <p>David William Zuck was born on March 27, 1944, in Evansville, Indiana. He was the second of four children born to Robert Karl Zuck and Florence Mac Enally. Initially, David studied at Elizabethtown College in Lancaster, Pennsylvania, from 1963 to 1965 before developing an interest in visual art. He then transferred to American University where he pursued painting and sculpture. It was at American University where he met his future wife, Sally Di Giacomo, who was also an art major. They married and graduated in 1967.</p>
+       p>David William Zuck was born on March 27, 1944, in Evansville, Indiana. He was the second of four children born to Robert Karl Zuck and Florence Mac Enally. Initially, David studied at Elizabethtown College in Lancaster, Pennsylvania, from 1963 to 1965 before developing an interest in visual art. He then transferred to American University where he pursued painting and sculpture. It was at American University where he met his future wife, Sally Di Giacomo, who was also an art major. They married and graduated in 1967.</p>
             
 <p> After graduation, David landed a job as an art teacher, at the Jefferson County School System in Upstate New York for a year. During this time, the couple lived with David’s parents while he worked as a metal worker to acquire the skills needed for metal sculpture. They eventually relocated to the Richmond, Virginia area where several of David’s family members lived. They welcomed their first child, Jesse William, in 1968, and with some help, they found a home where their second child, Alice Elizabeth, was born, in December 1969. David found employment at various machine shops where he honed his welding skills.  </p> 
 
@@ -69,6 +68,16 @@
 
 <p> As David's reputation grew, he sold paintings to local corporations and was represented by The Foxhall Gallery in Washington D.C. Recently he has been represented by a gallery in Deltaville, The Logan Gallery. He continues to display with The Rappahannock Art League. David and Sally now reside in Chesterfield County, Virginia, on land that has been in the Mac Enally Family since 1903. </p> </p>
     </div>
+    </div>
+    <div class="image-column">
+        <img src="images/gena.jpg" alt="David and Sally">
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-column">
+     
+        <
     <div class="image-column">
           <img src="images/gena.jpg" alt="David and Sally">
     </div>
