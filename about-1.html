@@ -13,15 +13,18 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between; /* Distribute space between columns */
+  margin-left: 10px; /* Add small margin to the left */
+  margin-right: 10px; /* Add small margin to the right */
 }
 
 .text-column {
-  flex: 0 0 60%; /* Text column takes up 60% of the container */
+  flex: 0 0 calc(60% - 10px); /* Text column takes up 60% of the container minus margin */
   margin-right: 5%; /* Add some space between text and image */
 }
 
 .image-column {
-  flex: 0 0 35%; /* Image column takes up 35% of the container */
+  flex: 0 0 calc(35% - 10px); /* Image column takes up 35% of the container minus margin */
 }
 
 .image-column img {
@@ -35,6 +38,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 
 </style>
 </head>
