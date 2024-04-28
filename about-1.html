@@ -8,7 +8,7 @@
     <title>David William Zuck Oil Paintings</title>
 <style>
 .container {
-
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   overflow: hidden; /* Clearfix for containing floated elements */
@@ -16,7 +16,7 @@
 
 .text-column {
   float: left;
-  width: 100%;
+  width: 65%;
   margin-right: 5%; /* Add some space between text and image */
 }
 
@@ -31,6 +31,11 @@
   display: block; /* Ensure image does not affect line height */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-column p {
+  margin-bottom: 20px; /* Add margin to the bottom of paragraphs */
+  line-height: 1.6;
 }
 
 .text-column p {
