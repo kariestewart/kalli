@@ -10,11 +10,11 @@
   border-radius: inherit; /* Inherit border radius from parent */
   box-shadow: inherit; /* Inherit box shadow from parent */
 }
-.container {
+#text {
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.container p {
+#text p {
     overflow-wrap: break-word; /* Allow long words to break and wrap */
     word-wrap: break-word; /* Same as overflow-wrap, for older browsers */
     hyphens: none; /* Prevent hyphenation */
