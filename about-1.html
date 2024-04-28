@@ -12,15 +12,16 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .text-column {
-  flex: 0 0 60%;
+  flex: 0 0 60%; /* Text column takes up 60% of the container */
+  margin-right: 5%; /* Add some space between text and image */
 }
 
 .image-column {
-  flex: 0 0 35%;
+  flex: 0 0 35%; /* Image column takes up 35% of the container */
 }
 
 .image-column img {
@@ -34,6 +35,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 
 </style>
 </head>
